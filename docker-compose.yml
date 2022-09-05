@@ -2,7 +2,7 @@ version: "1.0"
 
 networks:
   billboard:
-    external: true
+    name: billboard
 
 services:
   billboard-config-server:
@@ -13,7 +13,7 @@ services:
     ports:
       - "8888:8888"
     networks:
-      billboard
+      - billboard
   billboard-taxi-service:
     container_name: billboard-taxi-service
     build:
@@ -24,7 +24,7 @@ services:
     depends_on:
       - billboard-config-server
     networks:
-      billboard
+      - billboard
   billboard-ads-service:
     container_name: billboard-ads-service
     build:
@@ -35,4 +35,4 @@ services:
     depends_on:
       - billboard-config-server
     networks:
-      billboard
+      - billboard
