@@ -1,38 +1,17 @@
 version: "1.0"
 
-networks:
-  billboard:
-    name: billboard
-
 services:
-  billboard-config-server:
-    container_name: billboard-config-server
-    build:
-      context: ./billboards-config-server
-      dockerfile: Dockerfile
-    ports:
-      - "8888:8888"
-    networks:
-      - billboard
-  billboard-taxi-service:
-    container_name: billboard-taxi-service
+  billboard-taxi-service-heroku-client:
+    container_name: billboard-taxi-service-heroku-client
     build:
       context: ./billboard-taxi-webapp
       dockerfile: Dockerfile
     ports:
-      - "9001:9001"
-    depends_on:
-      - billboard-config-server
-    networks:
-      - billboard
-  billboard-ads-service:
-    container_name: billboard-ads-service
+      - "9003:9003"
+  billboard-ads-service-heroku-client:
+    container_name: billboard-ads-service-heroku-client
     build:
       context: ./billboard-ads-webapp
       dockerfile: Dockerfile
     ports:
-      - "9002:9002"
-    depends_on:
-      - billboard-config-server
-    networks:
-      - billboard
+      - "9004:9004"

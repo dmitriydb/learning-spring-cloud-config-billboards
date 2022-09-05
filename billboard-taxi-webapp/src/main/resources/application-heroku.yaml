@@ -1,2 +1,3 @@
-config:
-  import: optional:configserver:http://billboard-config-server.herokuapps.com:8888
+spring:
+  config:
+    import: optional:configserver:https://billboard-config-server.herokuapp.com/
