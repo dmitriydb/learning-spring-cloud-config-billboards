@@ -29,7 +29,7 @@ public class AdsController {
       text = String.format("<b>%s</b>", text);
     }
     if (isItalic) {
-      text = String.format("<b>%s</b>", text);
+      text = String.format("<i>%s</i>", text);
     }
     return text;
   }
