@@ -11,13 +11,13 @@
     <packaging>pom</packaging>
     <modules>
         <module>billboards-config-server</module>
+        <module>billboard-ads-webapp</module>
+        <module>billboard-taxi-webapp</module>
     </modules>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
-
-
 
 </project>

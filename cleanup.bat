@@ -1,0 +1,1 @@
+for /f "tokens=1" %%i in ('jps -m ^| find "billboard"') do ( taskkill /F /PID %%i )
