@@ -7,11 +7,11 @@ services:
       context: ./billboard-taxi-webapp
       dockerfile: Dockerfile
     ports:
-      - "9003:9003"
+      - "9001:9001"
   billboard-ads-service-heroku-client:
     container_name: billboard-ads-service-heroku-client
     build:
       context: ./billboard-ads-webapp
       dockerfile: Dockerfile
     ports:
-      - "9004:9004"
+      - "9002:9002"

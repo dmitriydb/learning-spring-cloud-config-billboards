@@ -1,10 +1,6 @@
-server:
-  port: 9004
 spring:
   application:
     name: billboard-ads
-  profiles:
-    active: heroku
   cloud:
     config:
       username: root
