@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TaxiController {
 
-  @Value("${caps:false}")
+  @Value("${uppercase:false}")
   private boolean isCaps;
 
   @Value("${bold:false}")

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AdsController {
 
-  @Value("${caps:false}")
+  @Value("${uppercase:false}")
   private boolean isCaps;
 
   @Value("${bold:false}")
@@ -21,7 +21,7 @@ public class AdsController {
 
   @GetMapping("/say")
   public String showText() {
-    String text = "Buy cars! Call 440330 now";
+    String text = "Buy stuff! Call 440330 now";
     if (isCaps) {
       text = text.toUpperCase(Locale.ROOT);
     }
