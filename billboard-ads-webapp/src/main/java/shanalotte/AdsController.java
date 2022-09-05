@@ -19,6 +19,9 @@ public class AdsController {
   @Value("${italic:false}")
   private boolean isItalic;
 
+  @Value("${heroku:false}")
+  private boolean isHeroku;
+
   @GetMapping("/say")
   public String showText() {
     String text = "Buy stuff! Call 440330 now";
@@ -30,6 +33,9 @@ public class AdsController {
     }
     if (isItalic) {
       text = String.format("<i>%s</i>", text);
+    }
+    if (isHeroku) {
+      text = "[Hi, heroku!] " + text;
     }
     return text;
   }

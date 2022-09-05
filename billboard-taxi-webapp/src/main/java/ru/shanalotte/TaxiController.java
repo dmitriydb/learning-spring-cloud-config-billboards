@@ -17,6 +17,9 @@ public class TaxiController {
   @Value("${bold:false}")
   private boolean isBold;
 
+  @Value("${heroku:false}")
+  private boolean isHeroku;
+
   @Autowired
   private Environment environment;
 
@@ -28,6 +31,9 @@ public class TaxiController {
     }
     if (isBold) {
       text = String.format("<b>%s</b>", text);
+    }
+    if (isHeroku) {
+      text = "[Hi, heroku!] " + text;
     }
     return text;
   }

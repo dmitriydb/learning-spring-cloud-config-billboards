@@ -4,9 +4,7 @@ spring:
   application:
     name: billboard-taxi
   profiles:
-    active: production
-  config:
-    import: optional:configserver:http://billboard-config-server.billboard:8888
+    active: heroku
   cloud:
     config:
       username: root

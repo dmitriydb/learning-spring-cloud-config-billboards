@@ -1,0 +1,2 @@
+config:
+  import: optional:configserver:http://billboard-config-server.herokuapps.com:8888
