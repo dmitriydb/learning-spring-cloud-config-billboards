@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/billboards-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/billboard-ads-webapp/pom.xml" />
+        <option value="$PROJECT_DIR$/billboard-taxi-webapp/pom.xml" />
       </list>
     </option>
   </component>
