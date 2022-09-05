@@ -28,5 +28,13 @@ pipeline {
             }
         }
 
+         stage('Deploying heroku clients') {
+            steps {
+                dir("learning-spring-cloud-config-billboards") {
+                    bat 'git checkout heroku'
+                    bat 'docker compose up --build --force-recreate -d'
+                }
+            }
+        }
     }
 }
