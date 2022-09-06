@@ -10,3 +10,5 @@ spring:
     user:
       name: root
       password: c3rb3rus
+  application:
+    name: billboards-config-server

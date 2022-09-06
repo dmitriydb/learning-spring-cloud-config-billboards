@@ -32,3 +32,12 @@ services:
       - "9002:9002"
     networks:
       - billboard
+  billboard-eureka-server:
+    container_name: billboard-eureka-server
+    build:
+      context: ./billboards-eureka-server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    networks:
+      - billboard

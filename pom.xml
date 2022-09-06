@@ -15,6 +15,7 @@
         <module>billboards-config-server</module>
         <module>billboard-ads-webapp</module>
         <module>billboard-taxi-webapp</module>
+        <module>billboards-eureka-server</module>
     </modules>
 
     <properties>

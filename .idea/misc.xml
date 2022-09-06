@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/billboards-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/billboard-ads-webapp/pom.xml" />
         <option value="$PROJECT_DIR$/billboard-taxi-webapp/pom.xml" />
+        <option value="$PROJECT_DIR$/billboards-eureka-server/pom.xml" />
       </list>
     </option>
   </component>
