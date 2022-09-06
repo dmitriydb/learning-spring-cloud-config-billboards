@@ -21,8 +21,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "9001:9001"
-    depends_on:
-      - billboard-config-server
     networks:
       - billboard
   billboard-ads-service:
@@ -32,7 +30,5 @@ services:
       dockerfile: Dockerfile
     ports:
       - "9002:9002"
-    depends_on:
-      - billboard-config-server
     networks:
       - billboard

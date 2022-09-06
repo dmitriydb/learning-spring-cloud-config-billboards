@@ -6,3 +6,6 @@ spring:
       username: root
       name: billboard-taxi
       password: c3rb3rus
+      fail-fast: true
+      retry:
+        max-attempts: 100

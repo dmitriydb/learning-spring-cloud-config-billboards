@@ -1,12 +1,11 @@
-server:
-  port: 9003
 spring:
   application:
     name: billboard-taxi
-  profiles:
-    active: heroku
   cloud:
     config:
       username: root
       name: billboard-taxi
       password: c3rb3rus
+      fail-fast: true
+      retry:
+        max-attempts: 100
