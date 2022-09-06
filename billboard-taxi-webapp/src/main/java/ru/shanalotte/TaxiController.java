@@ -17,6 +17,9 @@ public class TaxiController {
   @Value("${bold:false}")
   private boolean isBold;
 
+  @Value("${italic:false}")
+  private boolean isItalic;
+
   @Value("${heroku:false}")
   private boolean isHeroku;
 
@@ -31,6 +34,9 @@ public class TaxiController {
     }
     if (isBold) {
       text = String.format("<b>%s</b>", text);
+    }
+    if (isItalic) {
+      text = String.format("<i>%s</i>", text);
     }
     if (isHeroku) {
       text = "[Hi, heroku!] " + text;
