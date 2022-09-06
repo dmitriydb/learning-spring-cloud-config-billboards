@@ -12,3 +12,7 @@ spring:
       password: c3rb3rus
   application:
     name: billboards-config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://billboard-eureka-server.billboard:8761/eureka/
