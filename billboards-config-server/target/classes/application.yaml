@@ -6,7 +6,6 @@ spring:
       server:
         git:
           uri: https://github.com/dmitriydb/learning-spring-cloud-config-billboards
-          refresh-rate: 5
   security:
     user:
       name: root
