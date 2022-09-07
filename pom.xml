@@ -24,4 +24,10 @@
         <java.version>15</java.version>
     </properties>
 
+    <scm>
+        <developerConnection>
+            scm:git:git@github.com/dmitriydb/learning-spring-cloud-config-billboards.git
+        </developerConnection>
+    </scm>
+
 </project>
